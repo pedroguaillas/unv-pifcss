@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import banner from "../assets/exels-banner.jpg";
+import onu from "../assets/Onu.png";
+---
+
+<div class="relative">
+    <Image src={banner} alt="Banner" class="w-[100vw]" />
+    <div class="absolute bottom-44 md:bottom-80 z-10">
+        <button
+            class="bg-blue-500 rounded-r-full text-white font-semibold px-10 py-4 text-4xl md:text-6xl"
+            type="button"
+        >
+            Voluntario Sur-Sur
+        </button>
+    </div>
+    <div
+        class="absolute left-12 bottom-24 md:bottom-55 w-[400px] md:w-[600px] border border-white rounded-l-full rounded-r-full px-10 py-6"
+    >
+        <p class="text-white md:text-2xl">
+            Una colaboración técnica entre el PIFCSS y UNV para potenciar la
+            Cooperación Sur-Sur
+        </p>
+    </div>
+    <div class="absolute flex left-12 bottom-6 w-[400px] px-10 py-6">
+        <div class="flex gap-1 items-center">
+            <!-- Icono -->
+            <div class="relative">
+                <Image src={onu} alt="Logo ONU" width={30} />
+            </div>
+            <!-- Texto -->
+            <div class="w-[100px]">
+                <h2 class="text-white text-xs font-bold">VOLUNTARIOS ONU</h2>
+            </div>
+        </div>
+        <div class="flex gap-4 items-center pt-2">
+            <!-- Icono -->
+            <div class="relative">
+                <div
+                    class="inline-block w-8 h-8 border-8 border-t-white border-r-transparent border-b-transparent border-l-white rounded-full"
+                >
+                </div>
+                <div
+                    class="inline-block absolute left-3 -top-2 w-8 h-8 border-8 border-t-transparent border-r-white border-b-white border-l-transparent rounded-full"
+                >
+                </div>
+            </div>
+            <!-- Texto -->
+            <h2 class="text-white text-2xl font-bold">PIFCSS</h2>
+        </div>
+    </div>
+    <div class="absolute w-full flex justify-end bottom-20 right-4">
+        <div
+            class="inline-block w-24 h-24 border-16 border-t-transparent border-r-orange-600 border-b-orange-600 border-l-transparent -rotate-45 rounded-full"
+        >
+        </div>
+    </div>
+</div>
